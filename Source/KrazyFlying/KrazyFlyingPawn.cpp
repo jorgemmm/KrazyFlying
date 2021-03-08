@@ -55,6 +55,8 @@ void AKrazyFlyingPawn::Tick(float DeltaSeconds)
 	// Move plan forwards (with sweep so we stop when we collide with things)
 	AddActorLocalOffset(LocalMove, true);
 
+	
+	
 	// Calculate change in rotation this frame
 	FRotator DeltaRotation(0,0,0);
 	DeltaRotation.Pitch = CurrentPitchSpeed * DeltaSeconds;
